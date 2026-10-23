@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hariram K | Computer Science Student Portfolio</title>
+<meta name="description" content="Portfolio of Hariram K, a computer science student building applications and solving problems.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="#home">HARIRAM K</a>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="icon-btn" id="themeBtn" aria-label="Switch to light theme">☀</button>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="greeting" id="greeting">Welcome. I'm</p>
+    <h1>Hariram K</h1>
+    <p class="role">Computer Science student and beginner application developer</p>
+    <p>I enjoy turning everyday problems into working programs, one project at a time.</p>
+    <div class="actions">
+      <a class="btn" href="#projects">View my projects</a>
+      <a class="btn ghost" href="#contact">Contact me</a>
+    </div>
+    <div class="visitor" role="group" aria-label="Choose what you are here for">
+      <span>I'm visiting as:</span>
+      <button class="chip" data-who="a recruiter">Recruiter</button>
+      <button class="chip" data-who="a teacher">Teacher</button>
+      <button class="chip" data-who="a fellow developer">Developer</button>
+    </div>
+  </div>
+  <div class="photo-wrap">
+    <img src="images/profile.jpg" alt="Portrait of Hariram K wearing glasses and a dark blazer against a blue-grey background" width="487" height="514">
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About me</h2>
+  <p>I'm Hariram, currently pursuing a degree in Computer Science. I like understanding how software works and building small tools that people can actually use.</p>
+  <p>So far I have built a restaurant billing system, a weather app and a calculator. Each one taught me how to break a big problem into smaller steps. I hope to work as a software developer and keep growing through real projects.</p>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="grid three">
+    <article class="card"><h3>Programming</h3><p>Writing clear code, using logic and data structures to make programs work.</p></article>
+    <article class="card"><h3>Problem solving</h3><p>Breaking problems into steps, testing ideas and fixing what fails.</p></article>
+    <article class="card"><h3>Application and project development</h3><p>Planning, building and finishing complete applications from idea to working result.</p></article>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="slider" id="slider" role="region" aria-roledescription="carousel" aria-label="Project gallery">
+    <div class="track" id="track">
+      <figure class="slide"><img src="images/project-restaurant.svg" alt="Restaurant order processing and billing system screen showing an order list and total"><figcaption>Restaurant Order Processing and Billing System</figcaption></figure>
+      <figure class="slide"><img src="images/project-weather.svg" alt="Weather app screen showing a temperature and city name"><figcaption>Weather App</figcaption></figure>
+      <figure class="slide"><img src="images/project-calculator.svg" alt="Calculator screen with a display and number buttons"><figcaption>Functional Calculator</figcaption></figure>
+    </div>
+    <button class="s-btn prev" id="prev" aria-label="Previous project">‹</button>
+    <button class="s-btn next" id="next" aria-label="Next project">›</button>
+    <div class="dots" id="dots"></div>
+  </div>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button class="chip active" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" data-filter="business" aria-pressed="false">Business</button>
+    <button class="chip" data-filter="utility" aria-pressed="false">Utility</button>
+  </div>
+  <div class="grid three">
+    <article class="card project" data-cat="business">
+      <div class="visual" role="img" aria-label="Project visual placeholder for the restaurant billing system">🍽</div>
+      <h3>Restaurant Order Processing and Billing System</h3>
+      <p>Takes customer orders and prepares the final bill.</p>
+      <p class="tools"><strong>Tools:</strong> Programming, problem solving</p>
+      <button class="more" aria-expanded="false">Show details</button>
+      <div class="details" hidden>
+        <p><strong>What I did:</strong> Built the order flow and the billing calculation.</p>
+        <p><strong>What I learned:</strong> Handling many items and totals correctly.</p>
+        <p class="note">Not published online. Screenshots or the project folder are included with my submission.</p>
+      </div>
+    </article>
+    <article class="card project" data-cat="utility">
+      <div class="visual" role="img" aria-label="Project visual placeholder for the weather app">⛅</div>
+      <h3>Weather App</h3>
+      <p>Shows weather conditions for a place the user chooses.</p>
+      <p class="tools"><strong>Tools:</strong> Application development</p>
+      <button class="more" aria-expanded="false">Show details</button>
+      <div class="details" hidden>
+        <p><strong>What I did:</strong> Designed the screen and displayed weather data.</p>
+        <p><strong>What I learned:</strong> Working with external data and showing it clearly.</p>
+        <p class="note">Not published online. Screenshots or the project folder are included with my submission.</p>
+      </div>
+    </article>
+    <article class="card project" data-cat="utility">
+      <div class="visual" role="img" aria-label="Project visual placeholder for the functional calculator">🧮</div>
+      <h3>Functional Calculator</h3>
+      <p>A working calculator that performs everyday arithmetic.</p>
+      <p class="tools"><strong>Tools:</strong> Programming, problem solving</p>
+      <button class="more" aria-expanded="false">Show details</button>
+      <div class="details" hidden>
+        <p><strong>What I did:</strong> Wrote the logic for each operation and the button layout.</p>
+        <p><strong>What I learned:</strong> Handling user input and edge cases.</p>
+        <p class="note">Not published online. Screenshots or the project folder are included with my submission.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email me at <a href="mailto:farmtoearm@gmail.com">farmtoearm@gmail.com</a>, or fill in the form below.</p>
+  <form id="form" novalidate>
+    <label for="name">Name</label>
+    <input id="name" name="name" autocomplete="name" required>
+    <span class="err" id="nameErr" role="alert"></span>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+    <span class="err" id="emailErr" role="alert"></span>
+    <label for="msg">Message</label>
+    <textarea id="msg" name="msg" rows="4" required></textarea>
+    <span class="err" id="msgErr" role="alert"></span>
+    <button class="btn" type="submit">Check my message</button>
+    <p id="status" role="status"></p>
+  </form>
+</section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Hariram K. All rights reserved.</p>
+  <p><a href="#projects">Projects</a> · <a href="mailto:farmtoearm@gmail.com">Email</a></p>
+</footer>
+<button class="top" id="topBtn" aria-label="Back to top" hidden>↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
